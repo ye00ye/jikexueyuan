@@ -1,0 +1,191 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+article, aside, dialog, footer, header, section, footer, nav, figure, menu{
+    display:block;
+}
+
+body {
+    font: 12px arial;
+    height:100%;
+    background:#ffff;
+  /*  position:relative;*/
+    display:block;
+}
+
+
+
+#wrapper{
+    min-height:600px;
+    min-width:810px;
+    position:relative;
+    height:100%;
+
+}
+
+.content {
+    text-align: center;
+    clear:both;
+    width:100%;
+
+}
+
+/*设置中间的大图片*/
+.content img {
+    width: 270px;
+    height: 129px;
+}
+
+
+.background{
+    position:relative;
+    border:1px solid #b6b6b6;
+    background:#fff;
+    width:539px;
+    margin-right:0px;
+    border-right-width:0px;
+    height:34px;
+    overflow:hidden;
+    display:inline-block;
+}
+
+/*设置照相机图片*/
+#camera{
+    z-index:1;
+    position:absolute;
+    right:11px;
+    top:50%;
+    margin-top:-8px;
+    height:16px;
+    width:18px;
+    background-color: #fff;
+    background-image: url("../camera2.png");
+}
+
+/*设置输入框*/
+#kw{
+    width:500px;
+    height:22px;
+    display:inline-block;
+    font:16px arial;
+    border:0;
+    outline:0;
+    margin:6px 0 0 7px;
+    padding:0; 
+}
+
+/*设置“百度一下“这个按钮*/
+#button {
+    width: auto;
+    height: auto;
+    display:inline-block;
+    vertical-align:top;
+    text-align:left;
+}
+.tijiao{
+    width:100px;
+    height:36px;
+    background:#3385ff;
+    border-bottom:1px solid #2d78f4;
+    color:#fff;
+    align-items:flex-start;
+    border:0;
+    padding:0;
+}
+
+/*设置最下面两层*/
+footer {
+    position:absolute;
+    bottom:10px;
+    width:484px;
+    left:50%;
+    margin-left:-242px;
+}
+
+footer p {
+    text-align: center;
+}
+
+
+
+
+/*登录框设置*/
+
+nav{
+    float:right;
+    margin:19px 0 5px;
+}
+
+.navigator{
+    display:inline-block;
+    position: relative;
+}
+.navigator ul{
+    list-style-type: none;
+}
+
+.mnav{
+    font-size:13px;
+    margin-left:20px;
+    line-height:24px;
+    font-weight:700;
+    color:#333;
+    float:left;
+}
+.mnav:hover{
+    color:blue;
+}
+
+
+/*更多产品设置*/
+.navigator{
+    font-size:13px;
+    margin-left:20px;
+    line-height:24px;
+    font-weight:700;
+    color:#333;
+    float:left;
+}
+
+.navigator a span{
+    background-color:#38f;
+    width:60px;
+    height:23px;
+    line-height:24px;
+    border-bottom:1px solid #38f;
+    color:white;
+}
+
+.navigator a{
+    text-decoration: none;
+}
+
+.navigator a,
+.navigator ul li a:visited {
+    display: block;
+    text-align: center;
+    width: 60px;
+    height: 50px;
+    
+}
+
+
+.navigator ul {
+    display: none;
+}
+
+.navigator:hover ul {
+    display: block;
+    position: absolute;
+    top: 51px;
+    left: 0;
+    width: 60px;
+    
+}
+
+.navigator:hover ul li a {
+    display: block;
+}
+

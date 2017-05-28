@@ -1,0 +1,64 @@
+
+        body{
+            background-image: url("../img/beijing.gif");
+        }
+        .content{
+            background-color:#FFFFFF ;
+            margin:auto;
+            border-radius: 20px;
+            font-size:15px;
+            width:900px;
+        }
+        #top-left{
+            margin-left:50px;
+        }
+        #top-right{
+            margin-left:500px;
+        }
+        span a{
+            text-decoration: none;
+        }
+        .red{
+            color:red;
+        }
+        .blue{
+            color:blue;
+        }
+        table{
+            border-collapse:collapse;
+        }
+        .head{
+            font-size:30px;
+        }
+        #head{
+            text-align:center;
+        }
+        .head-right{
+            color:#FF0099;
+        }
+        .colspan{
+            background-color: #EEEEEE;
+            color:#003399;
+        }
+        .alignset{
+            text-align:right;
+            font-family: "宋体";
+            color:green;
+        }
+        .end{
+            height:50px;
+            text-align:center;
+        }
+        .bottom{
+            font-size: 0;
+        }
+     .end input{
+        width:150px;
+        height:30px;
+        font-style: italic;
+        font-size: 15px;
+        }
+        footer{
+            text-align:center;
+            line-height: 100px;
+        }

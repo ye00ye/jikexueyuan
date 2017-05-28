@@ -1,0 +1,35 @@
+    .page-header {
+        background: orange;
+        padding-top: 5px;
+    }
+    
+    img {
+        position: relative;
+        bottom: 13px;
+    }
+    
+    #web17173 {
+        color: orange;
+        font-size: 20px;
+    }
+    .navbar-right{
+    	padding-right:30px;
+    }
+    .left{
+    	background:grey;
+    }
+    li a{
+    	color: black;
+    }
+    .main{
+    	background:grey;
+        margin-left:15px;
+    }
+    .jumbtron img{
+    	width:500px;
+    	display:block;
+    	margin-top:36px;
+    }
+    .col-sm-9{
+    	width:74%;
+    }

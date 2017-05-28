@@ -1,0 +1,165 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+article, aside, dialog, footer, header, section, footer, nav, figure, menu{
+    display:block;
+}
+
+body {
+    font: 12px arial;
+    height:100%;
+    background:#ffff;
+  /*  position:relative;*/
+    display:block;
+}
+
+
+
+#wrapper{
+    min-height:600px;
+    min-width:810px;
+    position:relative;
+    height:100%;
+
+}
+
+.content {
+    text-align: center;
+    clear:both;
+    width:100%;
+
+}
+
+/*设置中间的大图片*/
+.content img {
+    width: 270px;
+    height: 129px;
+}
+
+
+
+.wrap{
+    width:100%;
+}
+
+/*设置输入框*/
+#kw{
+    width:500px;
+    height:40px;
+    display:inline-block;
+    font:16px arial;
+    outline:0;
+    margin:6px 0 0 7px;
+    padding:0; 
+}
+
+
+
+.tijiao{
+    width:100px;
+    height:40px;
+    background:#3385ff;
+    border-bottom:1px solid #2d78f4;
+    color:#fff;
+    align-items:flex-start;
+    border:0;
+    margin-top:4px;
+    margin-left:-4px;
+}
+
+/*设置最下面两层*/
+footer {
+    position:absolute;
+    bottom:10px;
+    width:484px;
+    left:50%;
+    margin-left:-242px;
+}
+
+footer p {
+    text-align: center;
+}
+
+
+
+
+/*登录框设置*/
+
+nav{
+    float:right;
+    margin:19px 0 5px;
+}
+
+.navigator{
+    display:inline-block;
+    position: relative;
+}
+.navigator ul{
+    list-style-type: none;
+}
+
+.mnav{
+    font-size:13px;
+    margin-left:20px;
+    line-height:24px;
+    font-weight:700;
+    color:#333;
+    float:left;
+}
+.mnav:hover{
+    color:blue;
+}
+
+
+/*更多产品设置*/
+.navigator{
+    font-size:13px;
+    margin-left:20px;
+    line-height:24px;
+    font-weight:700;
+    color:#333;
+    float:left;
+}
+
+.navigator a span{
+    background-color:#38f;
+    width:60px;
+    height:23px;
+    line-height:24px;
+    border-bottom:1px solid #38f;
+    color:white;
+}
+
+.navigator a{
+    text-decoration: none;
+}
+
+.navigator a,
+.navigator ul li a:visited {
+    display: block;
+    text-align: center;
+    width: 60px;
+    height: 50px;
+    
+}
+
+
+.navigator ul {
+    display: none;
+}
+
+.navigator:hover ul {
+    display: block;
+    position: absolute;
+    top: 51px;
+    left: 0;
+    width: 60px;
+    
+}
+
+.navigator:hover ul li a {
+    display: block;
+}
+

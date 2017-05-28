@@ -1,0 +1,175 @@
+  .wrap {
+        margin: auto;
+        position: absolute;
+        background: black;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border: 2px solid red;
+    }
+    
+    .moon_head {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: orange;
+        margin-left: 100px;
+        margin-top: 100px;
+        position: absolute;
+        box-shadow: 0 0 10px 10px rgba(40, 50, 60, .5);
+    }
+    
+    .moon_left_eye_outer {
+        width: 30px;
+        height: 50px;
+        background: white;
+        position: absolute;
+        margin-left: 150px;
+        margin-top: 150px;
+        border-radius: 60px/90px;
+    }
+    
+    .moon_right_eye_outer {
+        width: 30px;
+        height: 50px;
+        background: white;
+        position: absolute;
+        margin-left: 220px;
+        margin-top: 150px;
+        border-radius: 60px/90px;
+    }
+    
+    /*左眼珠动画*/
+    .moon_left_eye_inner {
+        background: black;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        margin-left: 155px;
+        margin-top: 180px;
+        -webkit-animation: lef-eye 5s linear infinite;
+        animation:lef-eye 5s linear infinite;
+    }
+    
+    @-webkit-keyframes lef-eye {
+        0% {
+            -webkit-transform-origin: center bottom;
+            -webkit-transform: rotate(-45deg);
+        }
+        50% {
+            -webkit-transform-origin: center bottom;
+            -webkit-transform: rotate(0deg);
+        }
+        100% {
+            -webkit-transform-origin: center bottom;
+            -webkit-transform: rotate(45deg);
+        }
+    }
+
+    @keyframes lef-eye {
+        0% {
+            transform-origin: center bottom;
+            transform: rotate(-45deg);
+        }
+        50% {
+            transform-origin: center bottom;
+            transform: rotate(0deg);
+        }
+        100% {
+            transform-origin: center bottom;
+            transform: rotate(45deg);
+        }
+    }
+
+    /*右眼珠动画*/
+    .moon_right_eye_inner {
+        background: black;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        margin-left: 225px;
+        margin-top: 180px;
+        -webkit-animation: rig-eye 5s linear infinite;
+        animation: rig-eye 5s linear infinite;
+    }
+    
+    @-webkit-keyframes rig-eye {
+        0% {
+            -webkit-transform-origin: center bottom;
+            -webkit-transform: rotate(-45deg);
+        }
+        50% {
+            -webkit-transform-origin: center bottom;
+            -webkit-transform: rotate(0deg);
+        }
+        100% {
+            -webkit-transform-origin: center bottom;
+            -webkit-transform: rotate(45deg);
+        }
+      }
+
+        @keyframes rig-eye {
+        0% {
+            transform-origin: center bottom;
+            transform: rotate(-45deg);
+        }
+        50% {
+            transform-origin: center bottom;
+            transform: rotate(0deg);
+        }
+        100% {
+            transform-origin: center bottom;
+            transform: rotate(45deg);
+        }
+      }
+
+
+        .moon_nose {
+            position: absolute;
+            width: 0px;
+            height: 0px;
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+            border-bottom: 30px solid yellow;
+            margin-left: 170px;
+            margin-top: 200px;
+        }
+
+        /*云彩,运用了skew, translate*/
+        .cloud {
+            width: 200px;
+            height: 25px;
+            transform: skewX(-45deg);
+            background: grey;
+            border-radius: 30px;
+            position: absolute;
+            top: 250px;
+            -webkit-animation: cloud-moves 5s linear infinite;
+            animation: cloud-moves 5s linear infinite;
+        }
+        @-webkit-keyframes cloud-moves {
+            0% {
+                -webkit-transform: translate(0px) skewX(-45deg);
+            }
+            50% {
+                -webkit-transform: translate(100px) skewX(0deg);
+            }
+            100% {
+                -webkit-transform: translate(200px) skewX(45deg);
+            }
+        }
+
+        @keyframes cloud-moves {
+            0% {
+                transform: translate(0px) skewX(-45deg);
+            }
+            50% {
+                transform: translate(100px) skewX(0deg);
+            }
+            100% {
+                transform: translate(200px) skewX(45deg);
+            }
+        }

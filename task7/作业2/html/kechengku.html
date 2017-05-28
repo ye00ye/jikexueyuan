@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>极客学院课程库</title>
+    <link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- 头部设置 -->
+    <div class="top">
+        <div class="top-left-content">
+            <a href="#"><img src="../image/logo.png"></a>
+        </div>
+        <!-- 顶部搜索框设置 -->
+        <div class="sousuokuang">
+            <i class="fangdajing"></i>
+            <input type="input" value="搜索课程，问答或Wiki">
+            <input type="submit" value="Android">
+            <input type="submit" value="iOS">
+            <input type="submit" value="HTML5">
+            <i class="quxiao"></i>
+        </div>
+        <!-- 顶部搜索框设置end -->
+        <div class="top-middle-content">
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">职业学院</a><i class="top-sanjiao"></i>
+                    <div class="submenu school-list">
+                        <h3>前端学院</h3>
+                        <a href="#">
+                            <i class="web-icon"></i> Web 前端工程师
+                        </a>
+                        <a href="#">
+                            <i class="wechat-icon"></i> 微信小程序工程师
+                        </a>
+                        <h3>后端学院</h3>
+                        <a href="#">
+                            <i class="python-icon"></i> Python Web工程师
+                        </a>
+                        <a href="#">
+                            <i class="go-icon"></i> Go语言工程师
+                        </a>
+                        <h3>移动学院</h3>
+                        <a href="#">
+                            <i class="android-icon"></i> Android工程师
+                        </a>
+                        <a href="#">
+                            <i class="ios-icon"></i> iOS工程师
+                        </a>
+                    </div>
+                </li>
+                <li><a href="#">会员课程</a><i class="top-sanjiao"></i>
+                    <div class="submenu vip-lessons">
+                        <a href="#"><i class="kck"></i>课程库</a>
+                        <a href="#"><i class="zylj"></i>职业路径图</a>
+                        <a href="#"><i class="zstx"></i>知识体系图</a>
+                        <a href="#"><i class="xlkc"></i>系列课程</a>
+                        <a href="#"><i class="kcbq"></i>课程标签</a>
+                        <a href="#"><i class="hygm"></i>VIP会员购买</a>
+                    </div>
+                </li>
+                <li><a href="#">极客社区</a><i class="top-sanjiao"></i>
+                    <div class="submenu jksq">
+                        <a href="#"><i class="jswd"></i>技术问答</a>
+                        <a href="#"><i class="wiki"></i>Wiki</a>
+                        <a href="#"><i class="sq"></i>社群</a>
+                        <a href="#"><i class="zyxz"></i>资源下载</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="top-right-content">
+            <ul>
+                <li id="fangdajing"></li>
+                <li id="shouji">
+                    <div class="erweima"><img src="../image/header.png"><i></i></div>
+                </li>
+                <li id="user">
+                    <div id="users">
+                        <a href="#"><img src="../image/user.jpeg"></a><i id="year"></i>
+                    </div>
+                    <dl class="userinfo">
+                        <i class="topinfo"></i>
+                        <dd id="getlevel">
+                            <a href="#" class="renzheng"></a>
+                            <a href="#" class="vip"></a>
+                        </dd>
+                        <dd><a href="#"><i class="xxzx"></i>学习中心</a></dd>
+                        <dd><a href="#"><i class="grzy"></i>个人主页</a></dd>
+                        <dd><a href="#"><i class="xxtz"></i>消息通知</a></dd>
+                        <dd><a href="#"><i class="zhsz"></i>账号设置</a></dd>
+                        <dd><a href="#"><i class="tcdl"></i>退出登录</a></dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 头部设置end -->
+    <!-- 中间设置 -->
+    <div class="middle-content">
+        <div class="right-border"></div>
+        <div class="middle-contents">
+            <!-- 中部左边导航栏设置 -->
+            <div id="left">
+                <div class="up">
+                    <ul>
+                        <li id="special"><a class="first" href="#"><i></i>课程库</a></li>
+                        <li class="sub"><a class="first" href="#">移动开发</a>
+                            <div class="left-menu left-ydkf">
+                                <h3><a href="#">应用开发</a></h3>
+                                <div class="second"><a href="#">Android</a>&nbsp;|&nbsp;<a href="#">iOS</a></div>
+                                <h3><a href="#">游戏开发</a></h3>
+                                <div class="second"><a href="#">Cocos</a>&nbsp;|&nbsp;<a href="#">Unity3D</a>&nbsp;|&nbsp;<a href="#">SprinteKit 2D</a>&nbsp;|&nbsp;<a href="#">Unreal</a></div>
+                                <h3><a href="#">常用框架</a></h3>
+                                <div class="second"><a href="#">Cordova</a>&nbsp;|&nbsp;<a href="#">React Native</a></div>
+                            </div>
+                        </li>
+                        <li class="sub"><a class="first" href="#">前端开发</a>
+                            <div class="left-menu left-qdkf">
+                                <h3><a href="#">前端基础</a></h3>
+                                <div class="second"><a href="#">HTML</a>&nbsp;|&nbsp;<a href="#">CSS</a>&nbsp;|&nbsp;<a href="#">JavaScript</a>&nbsp;|&nbsp;<a href="#">HTML5</a>&nbsp;|&nbsp;<a href="#">CSS3</a>&nbsp;|&nbsp;<a href="#">技术前端</a></div>
+                                <h3><a href="#">前端进阶</a></h3>
+                                <div class="second"><a href="#">Typescript</a>&nbsp;|&nbsp;<a href="#">前端安全</a>&nbsp;|&nbsp;<a href="#">项目实战</a></div>
+                                <h3><a href="#">前端框架</a></h3>
+                                <div class="second"><a href="#">jQuery</a>&nbsp;|&nbsp;<a href="#">jQuery UI</a>&nbsp;|&nbsp;<a href="#">jQuery Mobile</a>&nbsp;|&nbsp;<a href="#">Ext JS</a>&nbsp;|&nbsp;<a href="#">AngularJS</a>&nbsp;|&nbsp;<a href="#">ReactJS</a>&nbsp;|&nbsp;<a href="#">Bootstrap</a>&nbsp;|&nbsp;<a href="#">React Native</a>&nbsp;|&nbsp;<a href="#">Backbone</a>&nbsp;|&nbsp;<a href="#">Three.js</a>&nbsp;|&nbsp;<a href="#">MooTools</a>&nbsp;|&nbsp;<a href="#">Compass</a></div>
+                                <h3><a href="#">HTML5游戏</a></h3>
+                                <div class="second"><a href="#">Canvas</a>&nbsp;|&nbsp;<a href="#">SVG</a>&nbsp;|&nbsp;<a href="#">WebGL</a>&nbsp;|&nbsp;<a href="#">Cocos2d-js</a>&nbsp;|&nbsp;<a href="#">CreateJS</a>&nbsp;|&nbsp;<a href="#">Flash</a>&nbsp;|&nbsp;<a href="#">Unreal</a>&nbsp;|&nbsp;<a href="#">Egret</a>&nbsp;|&nbsp;<a href="#">Phaser</a></div>
+                            </div>
+                        </li>
+                        <li class="sub"><a class="first" href="#">后端开发</a>
+                            <div class="left-menu left-hdka">
+                                <h3><a href="#">Python</a></h3>
+                                <div class="second">
+                                    <a href="#">Python 基础</a>&nbsp;|&nbsp;<a href="#">web2py</a>&nbsp;|&nbsp;<a href="#">Django</a>&nbsp;|&nbsp;<a href="#">Flask</a>&nbsp;|&nbsp;<a href="#">GUI</a>
+                                </div>
+                                <h3><a href="#">PHP</a></h3>
+                                <div class="second"><a href="#">PHP 基础</a>&nbsp;|&nbsp;<a href="#">YII</a>&nbsp;|&nbsp;<a href="#">ThinkPHP</a>&nbsp;|&nbsp;<a href="#">Laravel</a>&nbsp;|&nbsp;<a href="#">WordPress</a>&nbsp;|&nbsp;<a href="#">Phalcon</a>&nbsp;|&nbsp;<a href="#">Apache</a>&nbsp;|&nbsp;<a href="#">Facebook Hack</a></div>
+                                <h3><a href="#">Node.js</a></h3>
+                                <div class="second"><a href="#">Node.js基础</a>&nbsp;|&nbsp;<a href="#">express</a>&nbsp;|&nbsp;<a href="#">Meteor</a>&nbsp;|&nbsp;<a href="#">Hexo</a></div>
+                                <h3><a href="#">ASP.NET</a></h3>
+                                <div class="second"><a href="#">C#</a>&nbsp;|&nbsp;<a href="#">ASP.NET MVC</a>&nbsp;|&nbsp;<a href="#">Entity Framework</a>&nbsp;|&nbsp;<a href="#">WPF</a></div>
+                                <h3><a href="#">J2EE</a></h3>
+                                <div class="second"><a href="#">JSP</a>&nbsp;|&nbsp;<a href="#">Maven</a>&nbsp;|&nbsp;<a href="#">Spring</a>&nbsp;|&nbsp;<a href="#">SpringMVC</a>&nbsp;|&nbsp;<a href="#">Struts2</a>&nbsp;|&nbsp;<a href="#">MyBatis</a>&nbsp;|&nbsp;<a href="#">Hibernate</a>&nbsp;|&nbsp;<a href="#">Lucene</a>&nbsp;|&nbsp;<a href="#">常用框架</a>&nbsp;|&nbsp;<a href="#">项目实战</a></div>
+                                <h3><a href="#">Ruby</a></h3>
+                                <div class="second"><a href="#">Ruby 基础</a>&nbsp;|&nbsp;<a href="#">Ruby on Rails</a>&nbsp;|&nbsp;<a href="#">Grape</a>&nbsp;|&nbsp;<a href="#">Ruby进阶</a>&nbsp;|&nbsp;<a href="#">RubyMine</a></div>
+                                <h3><a href="#">Go</a></h3>
+                                <div class="second"><a href="#">Go 基础</a>&nbsp;|&nbsp;<a href="#">Revel</a>&nbsp;|&nbsp;<a href="#">beego</a></div>
+                                <h3><a href="#">Erlang</a></h3>
+                                <div class="second"><a href="#">Erlang 基础</a></div>
+                            </div>
+                        </li>
+                        <li class="sub"><a class="first" href="#">基础知识</a>
+                            <div class="left-menu left-jczs">
+                                <h3><a href="#">基础语言</a></h3>
+                                <div class="second">
+                                    <a href="#">C</a>&nbsp;|&nbsp;<a href="#">C++</a>&nbsp;|&nbsp;<a href="#">Objective-C</a>&nbsp;|&nbsp;<a href="#">Swift</a>&nbsp;|&nbsp;<a href="#">C#</a>&nbsp;|&nbsp;<a href="#">Java</a>&nbsp;|&nbsp;<a href="#">Perl</a>&nbsp;|&nbsp;<a href="#">Shell</a>&nbsp;|&nbsp;<a href="#">Qt</a>&nbsp;|&nbsp;<a href="#">Scala</a>
+                                </div>
+                                <h3><a href="#">计算机基础</a></h3>
+                                <div class="second">
+                                    <a href="#">计算机组成原理</a>&nbsp;|&nbsp;<a href="#">网络工程</a>&nbsp;|&nbsp;<a href="#">Word</a>&nbsp;|&nbsp;<a href="#">Excel</a>&nbsp;|&nbsp;<a href="#">PowerPoint</a>
+                                </div>
+                                <h3><a href="#">开发基础</a></h3>
+                                <div class="second">
+                                    <a href="#">算法基础</a>&nbsp;|&nbsp;<a href="#">数据结构</a>&nbsp;|&nbsp;<a href="#">设计模式</a>&nbsp;|&nbsp;<a href="#">软件工程</a>
+                                </div>
+                                <h3><a href="#">开发工具</a></h3>
+                                <div class="second">
+                                    <a href="#">Git/Github</a>&nbsp;|&nbsp;<a href="#">SVN</a>&nbsp;|&nbsp;<a href="#">VI</a>
+                                </div>
+                                <h3><a href="#">开发标准</a></h3>
+                                <div class="second">
+                                    <a href="#">OpenCL</a>&nbsp;|&nbsp;<a href="#">Open XML</a>&nbsp;|&nbsp;<a href="#">OpenGL/GLES</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="sub"><a class="first" href="#">云计算&大数据</a>
+                            <div class="left-menu left-dsj">
+                                <h3><a href="#">云计算</a></h3>
+                                <div class="second"><a href="#">OpenStack</a>&nbsp;|&nbsp;<a href="#">Docker</a>&nbsp;|&nbsp;<a href="#">CloudStack</a>&nbsp;|&nbsp;<a href="#">Windows Azure</a>&nbsp;|&nbsp;<a href="#">IaaS</a></div>
+                                <h3><a href="">大数据</a></h3>
+                                <div class="second">
+                                    <a href="#">Hadoop</a>&nbsp;|&nbsp;<a href="#">Storm</a>&nbsp;|&nbsp;<a href="#">Hive</a>&nbsp;|&nbsp;<a href="#">Flume</a>&nbsp;|&nbsp;<a href="#">Kafka</a>&nbsp;|&nbsp;<a href="#">Zookeeper</a>&nbsp;|&nbsp;<a href="#">Hbase</a>&nbsp;|&nbsp;<a href="#">Spark</a>&nbsp;|&nbsp;<a href="#">信息检索</a>&nbsp;|&nbsp;<a href="#">数据分析</a>
+                                </div>
+                                <h3><a href="#">虚拟化</a></h3>
+                                <div class="second"><a href="#">VMare</a></div>
+                                <h3><a href="">云平台</a></h3>
+                                <div class="second"><a href="#">腾讯云</a></div>
+                            </div>
+                        </li>
+                        <li class="sub"><a class="first" href="#">智能硬件&物联网</a>
+                            <div class="left-menu left-wlw">
+                                <h3><a href="#">硬件架构</a></h3>
+                                <div class="second">
+                                    <a href="#">C51</a>&nbsp;|&nbsp;<a href="#">ARM</a>&nbsp;|&nbsp;<a href="#">Keil</a>&nbsp;|&nbsp;<a href="#">Cortex-M</a>&nbsp;|&nbsp;<a href="#">Cortex-A</a>&nbsp;|&nbsp;<a href="#">AVR</a>
+                                </div>
+                                <h3><a href="#">物联网操作系统</a></h3>
+                                <div class="second">
+                                    <a href="#">RTOS</a>&nbsp;|&nbsp;<a href="#">Android Wear</a>&nbsp;|&nbsp;<a href="#">Apple Watchkit</a>
+                                </div>
+                                <h3><a href="#">开源硬件平台</a></h3>
+                                <div class="second">
+                                    <a href="#">Arduino</a>&nbsp;|&nbsp;<a href="#">树莓派</a>&nbsp;|&nbsp;<a href="#">mbed</a>&nbsp;|&nbsp;<a href="#">Gokit</a>&nbsp;|&nbsp;<a href="#">LeMaker Guitar</a>
+                                </div>
+                                <h3><a href="#">通信链接技术</a></h3>
+                                <div class="second">
+                                    <a href="#">无线WiFi</a>&nbsp;|&nbsp;<a href="#">移动通信</a>&nbsp;|&nbsp;<a href="#">蓝牙</a>&nbsp;|&nbsp;<a href="#">NFC</a>
+                                </div>
+                                <h3><a href="#">信息感知处理技术</a></h3>
+                                <div class="second">
+                                    <a href="#">传感器</a>&nbsp;|&nbsp;<a href="#">数据挖掘</a>
+                                </div>
+                                <h3><a href="#">人机交互技术</a></h3>
+                                <div class="second">
+                                    <a href="#">语言识别</a>&nbsp;|&nbsp;<a href="#">人脸识别</a>&nbsp;|&nbsp;<a href="#">手势识别</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="sub"><a class="first" href="#">数据库</a>
+                            <div class="left-menu left-sjk">
+                                <h3><a href="#">SQL</a></h3>
+                                <div class="second">
+                                    <a href="#">MySQL</a>&nbsp;|&nbsp;<a href="#">SQL Server</a>&nbsp;|&nbsp;<a href="#">Orade</a>&nbsp;|&nbsp;<a href="#">SQLite</a>&nbsp;|&nbsp;<a href="#">PostgreSQL</a>&nbsp;|&nbsp;<a href="#">DB2</a>
+                                </div>
+                                <h3><a href="#">NoSQL</a></h3>
+                                <div class="second">
+                                    <a href="#">Cassandra</a>&nbsp;|&nbsp;<a href="#">Redis</a>&nbsp;|&nbsp;<a href="#">MongoDB</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="sub"><a class="first" href="#">认证考试</a>
+                            <div class="left-menu left-rzks">
+                                <h3><a href="#">计算机等级考试</a></h3>
+                                <div class="second">
+                                    <a href="#">一级</a>&nbsp;|&nbsp;
+                                    <a href="#">二级C</a>&nbsp;|&nbsp;
+                                    <a href="#">二级Java</a>&nbsp;|&nbsp;
+                                    <a href="#">二级C++</a>&nbsp;|&nbsp;
+                                    <a href="#">网络工程师</a>&nbsp;|&nbsp;
+                                    <a href="#">数据库工程师</a>&nbsp;|&nbsp;
+                                    <a href="#">信息安全工程师</a>
+                                </div>
+                                <h3><a href="#">企业认证</a></h3>
+                                <div class="second">
+                                    <a href="#">思科认证</a>&nbsp;|&nbsp;
+                                    <a href="#">Oracle认证</a>&nbsp;|&nbsp;
+                                    <a href="#">Linux认证</a>&nbsp;|&nbsp;
+                                    <a href="#">ARM认证</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="sub"><a class="first" href="#">企业IT</a>
+                            <div class="left-menu left-qyit">
+                                <h3><a href="#">运维管理</a></h3>
+                                <div class="second"><a href="#">Shell</a>&nbsp;|&nbsp;<a href="#">自动化运维</a>&nbsp;|&nbsp;<a href="#">Nginx</a>&nbsp;|&nbsp;<a href="#">Apache</a>&nbsp;|&nbsp;<a href="#">运维监控</a></div>
+                                <h3><a href="#">商业智能</a></h3>
+                                <div class="second"><a href="#">FileMaker</a>
+                                </div>
+                                <h3><a href="#">操作系统</a></h3>
+                                <div class="second"><a href="#">Linux</a>&nbsp;|&nbsp;<a href="#">Windows</a>&nbsp;|&nbsp;<a href="#">Mac OS</a>
+                                </div>
+                                <h3><a href="#">企业服务</a></h3>
+                                <div class="second"><a href="#">B2C</a></div>
+                            </div>
+                        </li>
+                        <li class="sub last"><a class="first" href="#">设计&产品&测试</a>
+                            <div class="left-menu left-sjcpcs">
+                                <h3><a href="#">设计基础</a></h3>
+                                <div class="second">
+                                    <a href="#">Photoshop</a>&nbsp;|&nbsp;<a href="#">Flash</a>&nbsp;|&nbsp;<a href="#">Illustrator</a>&nbsp;|&nbsp;<a href="#">Sketch</a>
+                                </div>
+                                <h3><a href="#">游戏设计</a></h3>
+                                <div class="second">
+                                    <a href="#">界面设计</a>&nbsp;|&nbsp;<a href="#">角色设计</a>
+                                </div>
+                                <h3><a href="#">产品经理</a></h3>
+                                <div class="second">
+                                    <a href="#">需求分析</a>&nbsp;|&nbsp;<a href="#">Axure</a>&nbsp;|&nbsp;<a href="#">项目实战</a>
+                                </div>
+                                <h3><a href="#">视觉设计</a></h3>
+                                <div class="second">
+                                    <a href="#">应用UI设计</a>&nbsp;|&nbsp;<a href="#">网页UI设计</a>&nbsp;|&nbsp;<a href="#">设计理论</a>&nbsp;|&nbsp;<a href="#">图形设计</a>
+                                </div>
+                                <h3><a href="#">测试工具</a></h3>
+                                <div class="second">
+                                    <a href="#">自动化测试</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="down">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="one"></i>
+                                <div class="downlesson">职业路径图
+                                    <span></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="two"></i>
+                                <div class="downlesson">知识体系图
+                                    <span></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="three"></i>
+                                <div class="downlesson">系列课程
+                                    <span></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="four"></i>
+                                <div class="downlesson">课程标签
+                                    <span></span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 中部右边大块区域设置 -->
+            <div id="main">
+                <div id="wrap">
+                    <ul>
+                        <li class="first main-main"><a href="#">全部课程</a></li>
+                        <li class="main-main mains"><a href="#">最新</a><i class="top-sanjiao"></i>
+                            <ul class="main-sub">
+                                <li><a href="#">最新</a></li>
+                                <li><a href="#">最热</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-main mains"><a href="#">课程类型</a><i class="top-sanjiao"></i>
+                            <ul class="main-sub">
+                                <li><a href="#">VIP</a></li>
+                                <li><a href="#">免费</a></li>
+                                <li><a href="#">认证专享</a></li>
+                                <li><a href="#">全部</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-main mains"><a href="#">内容类型</a><i class="top-sanjiao"></i>
+                            <ul class="main-sub">
+                                <li><a href="#">知识精讲</a></li>
+                                <li><a href="#">项目实战</a></li>
+                                <li><a href="#">全部</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-main mains"><a href="#">难度等级</a><i class="top-sanjiao"></i>
+                            <ul class="main-sub">
+                                <li><a href="#">初级</a></li>
+                                <li><a href="#">中级</a></li>
+                                <li><a href="#">高级</a></li>
+                                <li><a href="#">全部</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="cf">
+                    <ul>
+                        <li>
+                            <div class="pic pic0">
+                                <i class="soucang"></i>
+                                <i class="anniu"></i>
+                                <i class="yinying"></i>
+                            </div>
+                            <div class="down-content">
+                                <div class="picmid">
+                                    <a href="#">腾讯产品-游戏云</a>
+                                </div>
+                                <p>本课程主要介绍腾讯游戏云相关知识</p>
+                                <div class="picdown">
+                                    <i class="time"></i>
+                                    <span>5课时 177分钟</span>
+                                    <span id="xuexi">4444人学习</span>
+                                </div>
+                                <div class="down-bottom">
+                                    <i class="deji"></i>
+                                    <span>中级</span>
+                                </div>
+                                <i class="bq"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pic pic1">
+                                <i class="soucang"></i>
+                                <i class="anniu"></i>
+                                <i class="yinying"></i>
+                            </div>
+                            <div class="down-content">
+                                <div class="picmid">
+                                    <a href="#">前端开发环境搭建(三种工具任选其一)</a>
+                                </div>
+                                <p>本课程主要介绍腾讯游戏云相关知识</p>
+                                <div class="picdown">
+                                    <i class="time"></i>
+                                    <span>6课时 41分钟</span>
+                                    <span id="xuexi">5162人学习</span>
+                                </div>
+                                <div class="down-bottom">
+                                    <i class="deji"></i>
+                                    <span>中级</span>
+                                </div>
+                                <i class="bq"></i>
+                            </div>
+                        </li>
+                        <li class="no-margin">
+                            <div class="pic pic2">
+                                <i class="soucang"></i>
+                                <i class="anniu"></i>
+                                <i class="yinying"></i>
+                            </div>
+                            <div class="down-content">
+                                <div class="picmid">
+                                    <a href="#">腾讯大咖分享-腾讯大咖分享之技术交流</a>
+                                </div>
+                                <p>本课程主要介绍腾讯游戏云相关知识</p>
+                                <div class="picdown">
+                                    <i class="time"></i>
+                                    <span>10课时 204分钟</span>
+                                    <span id="xuexi">4444人学习</span>
+                                </div>
+                                <div class="down-bottom">
+                                    <i class="deji"></i>
+                                    <span>中级</span>
+                                </div>
+                                <i class="bq"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pic pic3">
+                                <i class="soucang"></i>
+                                <i class="anniu"></i>
+                                <i class="yinying"></i>
+                            </div>
+                            <div class="down-content">
+                                <div class="picmid">
+                                    <a href="#">腾讯大咖分享-腾讯大咖分享之创业心经</a>
+                                </div>
+                                <p>本课程主要介绍腾讯游戏云相关知识</p>
+                                <div class="picdown">
+                                    <i class="time"></i>
+                                    <span>5课时 177分钟</span>
+                                    <span id="xuexi">4444人学习</span>
+                                </div>
+                                <div class="down-bottom">
+                                    <i class="deji"></i>
+                                    <span>中级</span>
+                                </div>
+                                <i class="bq"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pic pic4">
+                                <i class="soucang"></i>
+                                <i class="anniu"></i>
+                                <i class="yinying"></i>
+                            </div>
+                            <div class="down-content">
+                                <div class="picmid">
+                                    <a href="#">腾讯云产品-腾讯云通信</a>
+                                </div>
+                                <p>本课程主要介绍腾讯游戏云相关知识</p>
+                                <div class="picdown">
+                                    <i class="time"></i>
+                                    <span>5课时 177分钟</span>
+                                    <span id="xuexi">4444人学习</span>
+                                </div>
+                                <div class="down-bottom">
+                                    <i class="deji"></i>
+                                    <span>中级</span>
+                                </div>
+                                <i class="bq"></i>
+                            </div>
+                        </li>
+                        <li class="no-margin">
+                            <div class="pic pic5">
+                                <i class="soucang"></i>
+                                <i class="anniu"></i>
+                                <i class="yinying"></i>
+                            </div>
+                            <div class="down-content">
+                                <div class="picmid">
+                                    <a href="#">腾讯云产品-腾讯云视频云之互动直播</a>
+                                </div>
+                                <p>本课程主要介绍腾讯游戏云相关知识</p>
+                                <div class="picdown">
+                                    <i class="time"></i>
+                                    <span>12课时 115分钟</span>
+                                    <span id="xuexi">4444人学习</span>
+                                </div>
+                                <div class="down-bottom">
+                                    <i class="deji"></i>
+                                    <span>中级</span>
+                                </div>
+                                <i class="bq"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pic pic6">
+                                <i class="soucang"></i>
+                                <i class="anniu"></i>
+                                <i class="yinying"></i>
+                            </div>
+                            <div class="down-content">
+                                <div class="picmid">
+                                    <a href="#">腾讯云产品-腾讯视频云之直播LVB</a>
+                                </div>
+                                <p>本课程主要介绍腾讯游戏云相关知识</p>
+                                <div class="picdown">
+                                    <i class="time"></i>
+                                    <span>4课时 85分钟</span>
+                                    <span id="xuexi">4444人学习</span>
+                                </div>
+                                <div class="down-bottom">
+                                    <i class="deji"></i>
+                                    <span>中级</span>
+                                </div>
+                                <i class="bq"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pic pic7">
+                                <i class="soucang"></i>
+                                <i class="anniu"></i>
+                                <i class="yinying"></i>
+                            </div>
+                            <div class="down-content">
+                                <div class="picmid">
+                                    <a href="#">腾讯云产品-腾讯云通信</a>
+                                </div>
+                                <p>本课程主要介绍腾讯游戏云相关知识</p>
+                                <div class="picdown">
+                                    <i class="time"></i>
+                                    <span>5课时 177分钟</span>
+                                    <span id="xuexi">4444人学习</span>
+                                </div>
+                                <div class="down-bottom">
+                                    <i class="deji"></i>
+                                    <span>中级</span>
+                                </div>
+                                <i class="bq"></i>
+                            </div>
+                        </li>
+                        <li class="no-margin">
+                            <div class="pic pic8">
+                                <i class="soucang"></i>
+                                <i class="anniu"></i>
+                                <i class="yinying"></i>
+                            </div>
+                            <div class="down-content">
+                                <div class="picmid">
+                                    <a href="#">腾讯云产品-腾讯视频云之互动直播</a>
+                                </div>
+                                <p>本课程主要介绍腾讯游戏云相关知识</p>
+                                <div class="picdown">
+                                    <i class="time"></i>
+                                    <span>12课时 115分钟</span>
+                                    <span id="xuexi">4444人学习</span>
+                                </div>
+                                <div class="down-bottom">
+                                    <i class="deji"></i>
+                                    <span>中级</span>
+                                </div>
+                                <i class="bq"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pic pic9">
+                                <i class="soucang"></i>
+                                <i class="anniu"></i>
+                                <i class="yinying"></i>
+                            </div>
+                            <div class="down-content">
+                                <div class="picmid">
+                                    <a href="#">腾讯云产品-腾讯云云服务器</a>
+                                </div>
+                                <p>本课程主要介绍腾讯游戏云相关知识</p>
+                                <div class="picdown">
+                                    <i class="time"></i>
+                                    <span>3课时 13分钟</span>
+                                    <span id="xuexi">4444人学习</span>
+                                </div>
+                                <div class="down-bottom">
+                                    <i class="deji"></i>
+                                    <span>中级</span>
+                                </div>
+                                <i class="bq"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pic pic10">
+                                <i class="soucang"></i>
+                                <i class="anniu"></i>
+                                <i class="yinying"></i>
+                            </div>
+                            <div class="down-content">
+                                <div class="picmid">
+                                    <a href="#">腾讯云产品-腾讯云内容分发网络CDN</a>
+                                </div>
+                                <p>本课程主要介绍腾讯游戏云相关知识</p>
+                                <div class="picdown">
+                                    <i class="time"></i>
+                                    <span>4课时 14分钟</span>
+                                    <span id="xuexi">4444人学习</span>
+                                </div>
+                                <div class="down-bottom">
+                                    <i class="deji"></i>
+                                    <span>中级</span>
+                                </div>
+                                <i class="bq"></i>
+                            </div>
+                        </li>
+                        <li class="no-margin">
+                            <div class="pic pic11">
+                                <i class="soucang"></i>
+                                <i class="anniu"></i>
+                                <i class="yinying"></i>
+                            </div>
+                            <div class="down-content">
+                                <div class="picmid">
+                                    <a href="#">腾讯云产品-腾讯云对象存储COS</a>
+                                </div>
+                                <p>本课程主要介绍腾讯游戏云相关知识</p>
+                                <div class="picdown">
+                                    <i class="time"></i>
+                                    <span>5课时 30分钟</span>
+                                    <span id="xuexi">4444人学习</span>
+                                </div>
+                                <div class="down-bottom">
+                                    <i class="deji"></i>
+                                    <span>中级</span>
+                                </div>
+                                <i class="bq"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pic pic12">
+                                <i class="soucang"></i>
+                                <i class="anniu"></i>
+                                <i class="yinying"></i>
+                            </div>
+                            <div class="down-content">
+                                <div class="picmid">
+                                    <a href="#">云计算基础-云计算的组成</a>
+                                </div>
+                                <p>本课程主要介绍腾讯游戏云相关知识</p>
+                                <div class="picdown">
+                                    <i class="time"></i>
+                                    <span>4课时 22分钟</span>
+                                    <span id="xuexi">4444人学习</span>
+                                </div>
+                                <div class="down-bottom">
+                                    <i class="deji"></i>
+                                    <span>中级</span>
+                                </div>
+                                <i class="bq"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pic pic13">
+                                <i class="soucang"></i>
+                                <i class="anniu"></i>
+                                <i class="yinying"></i>
+                            </div>
+                            <div class="down-content">
+                                <div class="picmid">
+                                    <a href="#">云计算基础-一分钟了解云计算</a>
+                                </div>
+                                <p>本课程主要介绍腾讯游戏云相关知识</p>
+                                <div class="picdown">
+                                    <i class="time"></i>
+                                    <span>5课时 19分钟</span>
+                                    <span id="xuexi">4444人学习</span>
+                                </div>
+                                <div class="down-bottom">
+                                    <i class="deji"></i>
+                                    <span>中级</span>
+                                </div>
+                                <i class="bq"></i>
+                            </div>
+                        </li>
+                        <li class="no-margin">
+                            <div class="pic pic14">
+                                <i class="soucang"></i>
+                                <i class="anniu"></i>
+                                <i class="yinying"></i>
+                            </div>
+                            <div class="down-content">
+                                <div class="picmid">
+                                    <a href="#">打造你自己的Dragonboard 410c</a>
+                                </div>
+                                <p>本课程主要介绍腾讯游戏云相关知识</p>
+                                <div class="picdown">
+                                    <i class="time"></i>
+                                    <span>3课时 16分钟</span>
+                                    <span id="xuexi">4444人学习</span>
+                                </div>
+                                <div class="down-bottom">
+                                    <i class="deji"></i>
+                                    <span>中级</span>
+                                </div>
+                                <i class="bq"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pic pic15">
+                                <i class="soucang"></i>
+                                <i class="anniu"></i>
+                                <i class="yinying"></i>
+                            </div>
+                            <div class="down-content">
+                                <div class="picmid">
+                                    <a href="#">NDK编程开发</a>
+                                </div>
+                                <p>本课程主要介绍腾讯游戏云相关知识</p>
+                                <div class="picdown">
+                                    <i class="time"></i>
+                                    <span>3课时 22分钟</span>
+                                    <span id="xuexi">4444人学习</span>
+                                </div>
+                                <div class="down-bottom">
+                                    <i class="deji"></i>
+                                    <span>中级</span>
+                                </div>
+                                <i class="bq"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pic pic16">
+                                <i class="soucang"></i>
+                                <i class="anniu"></i>
+                                <i class="yinying"></i>
+                            </div>
+                            <div class="down-content">
+                                <div class="picmid">
+                                    <a href="#">应用开发和部署实例</a>
+                                </div>
+                                <p>本课程主要介绍腾讯游戏云相关知识</p>
+                                <div class="picdown">
+                                    <i class="time"></i>
+                                    <span>2课时 27分钟</span>
+                                    <span id="xuexi">4444人学习</span>
+                                </div>
+                                <div class="down-bottom">
+                                    <i class="deji"></i>
+                                    <span>中级</span>
+                                </div>
+                                <i class="bq"></i>
+                            </div>
+                        </li>
+                        <li class="no-margin">
+                            <div class="pic pic17">
+                                <i class="soucang"></i>
+                                <i class="anniu"></i>
+                                <i class="yinying"></i>
+                            </div>
+                            <div class="down-content">
+                                <div class="picmid">
+                                    <a href="#">简介Dragonboard 410c网络服务器</a>
+                                </div>
+                                <p>本课程主要介绍腾讯游戏云相关知识</p>
+                                <div class="picdown">
+                                    <i class="time"></i>
+                                    <span>2课时 12分钟</span>
+                                    <span id="xuexi">4444人学习</span>
+                                </div>
+                                <div class="down-bottom">
+                                    <i class="deji"></i>
+                                    <span>中级</span>
+                                </div>
+                                <i class="bq"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pic pic18">
+                                <i class="soucang"></i>
+                                <i class="anniu"></i>
+                                <i class="yinying"></i>
+                            </div>
+                            <div class="down-content">
+                                <div class="picmid">
+                                    <a href="#">Android应用开发</a>
+                                </div>
+                                <p>本课程主要介绍腾讯游戏云相关知识</p>
+                                <div class="picdown">
+                                    <i class="time"></i>
+                                    <span>2课时 17分钟</span>
+                                    <span id="xuexi">4444人学习</span>
+                                </div>
+                                <div class="down-bottom">
+                                    <i class="deji"></i>
+                                    <span>中级</span>
+                                </div>
+                                <i class="bq"></i>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pic pic19">
+                                <i class="soucang"></i>
+                                <i class="anniu"></i>
+                                <i class="yinying"></i>
+                            </div>
+                            <div class="down-content">
+                                <div class="picmid">
+                                    <a href="#">如何更换Dragonboard 410c操作系统</a>
+                                </div>
+                                <p>本课程主要介绍腾讯游戏云相关知识</p>
+                                <div class="picdown">
+                                    <i class="time"></i>
+                                    <span>9课时 100分钟</span>
+                                    <span id="xuexi">4444人学习</span>
+                                </div>
+                                <div class="down-bottom">
+                                    <i class="deji"></i>
+                                    <span>中级</span>
+                                </div>
+                                <i class="bq"></i>
+                            </div>
+                        </li>
+                        <li class="no-margin">
+                            <div class="pic pic20">
+                                <i class="soucang"></i>
+                                <i class="anniu"></i>
+                                <i class="yinying"></i>
+                            </div>
+                            <div class="down-content">
+                                <div class="picmid">
+                                    <a href="#">如何一小时快速搭建一个应用号</a>
+                                </div>
+                                <p>本课程主要介绍腾讯游戏云相关知识</p>
+                                <div class="picdown">
+                                    <i class="time"></i>
+                                    <span>3课时 30分钟</span>
+                                    <span id="xuexi">4444人学习</span>
+                                </div>
+                                <div class="down-bottom">
+                                    <i class="deji"></i>
+                                    <span>中级</span>
+                                </div>
+                                <i class="bq"></i>
+                            </div>
+                        </li>
+                        <li class="no-bottom">
+                            <div class="pic pic21">
+                                <i class="soucang"></i>
+                                <i class="anniu"></i>
+                                <i class="yinying"></i>
+                            </div>
+                            <div class="down-content">
+                                <div class="picmid">
+                                    <a href="#">如何挽救变砖的开发板</a>
+                                </div>
+                                <p>本课程主要介绍腾讯游戏云相关知识</p>
+                                <div class="picdown">
+                                    <i class="time"></i>
+                                    <span>3课时 7分钟</span>
+                                    <span id="xuexi">4444人学习</span>
+                                </div>
+                                <div class="down-bottom">
+                                    <i class="deji"></i>
+                                    <span>中级</span>
+                                </div>
+                                <i class="bq"></i>
+                            </div>
+                        </li>
+                        <li class="no-bottom">
+                            <div class="pic pic22">
+                                <i class="soucang"></i>
+                                <i class="anniu"></i>
+                                <i class="yinying"></i>
+                            </div>
+                            <div class="down-content">
+                                <div class="picmid">
+                                    <a href="#">简介DragonBoard 410c的开发环境</a>
+                                </div>
+                                <p>本课程主要介绍腾讯游戏云相关知识</p>
+                                <div class="picdown">
+                                    <i class="time"></i>
+                                    <span>6课时 26分钟</span>
+                                    <span id="xuexi">4444人学习</span>
+                                </div>
+                                <div class="down-bottom">
+                                    <i class="deji"></i>
+                                    <span>中级</span>
+                                </div>
+                                <i class="bq"></i>
+                            </div>
+                        </li>
+                        <li class="no-margin no-bottom">
+                            <div class="pic pic23">
+                                <i class="soucang"></i>
+                                <i class="anniu"></i>
+                                <i class="yinying"></i>
+                            </div>
+                            <div class="down-content">
+                                <div class="picmid">
+                                    <a href="#">专业术语/技术概念</a>
+                                </div>
+                                <p>本课程主要介绍腾讯游戏云相关知识</p>
+                                <div class="picdown">
+                                    <i class="time"></i>
+                                    <span>3课时 15分钟</span>
+                                    <span id="xuexi">4444人学习</span>
+                                </div>
+                                <div class="down-bottom">
+                                    <i class="deji"></i>
+                                    <span>中级</span>
+                                </div>
+                                <i class="bq"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 翻页设置 -->
+                <form class="page">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <button>1</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <button>2</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <button>3</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <button>4</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <button>5</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <button>6</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <button>7</button>
+                            </a>
+                        </li>
+                        <li>...</li>
+                        <li>
+                            <a href="#">
+                                <button id="next">下一页</button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <button>末页</button>
+                            </a>
+                        </li>
+                    </ul>
+                    <span>共95页 当前</span>
+                    <input type="text">
+                    <span>页</span>
+                    <button class="qr">确定</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- 中部设置结束 -->
+    <!-- 尾部设置 -->
+    <div class="footer">
+        <div class="left">
+            <h2>极客学院</h2>
+            <p>jikexueyuan.com</p>
+            <span>极客学院，编程是一种信仰!</span>
+        </div>
+        <div class="middle">
+            <dl>
+                <dt>职业学院</dt>
+                <dd>
+                    <a href="#">Web前端工程师</a>
+                </dd>
+                <dd>
+                    <a href="#">Python Web工程师</a>
+                </dd>
+                <dd>
+                    <a href="#">Go语言工程师</a>
+                </dd>
+                <dd>
+                    <a href="#">iOS工程师</a>
+                </dd>
+                <dd>
+                    <a href="#">微信小程序工程师</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>会员课程</dt>
+                <dd>
+                    <a href="#">课程表</a>
+                </dd>
+                <dd>
+                    <a href="#">知识体系图</a>
+                </dd>
+                <dd>
+                    <a href="#">职业路径图</a>
+                </dd>
+                <dd>
+                    <a href="#">系列课程</a>
+                </dd>
+                <dd>
+                    <a href="#">课程标签</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>极客社区</dt>
+                <dd>
+                    <a href="#">技术问题</a>
+                </dd>
+                <dd>
+                    <a href="#">Wiki</a>
+                </dd>
+                <dd>
+                    <a href="#">资源下载</a>
+                </dd>
+                <dd>
+                    <a href="#">社群</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>其他</dt>
+                <dd>
+                    <a href="#">关于我们</a>
+                </dd>
+                <dd>
+                    <a href="#">加入我们</a>
+                </dd>
+                <dd>
+                    <a href="#">讲师合作</a>
+                </dd>
+                <dd>
+                    <a href="#">联系我们</a>
+                </dd>
+                <dd>
+                    <a href="#">友情链接</a>
+                </dd>
+            </dl>
+        </div>
+        <div class="right">
+            <p>服务热线:400-678-8266</p>
+            <div class="footer-common footer-1">
+                <img src="../image/footer-1-1.png" alt="iOS" class="footer-pic">
+                <div class="left-common left-1"></div>
+                <div class="right-common">iPhone</div>
+            </div>
+            <div class="footer-common footer-2">
+                <img src="../image/footer-2-2.png" alt="android" class="footer-pic">
+                <div class="left-common left-2"></div>
+                <div class="right-common">Android</div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>
+                Copyright © 2013-2017&nbsp;<strong><a href="#">jiukexueyuan.com</a></strong>&nbsp;All Rights Reserved.京ICP备11018032号-8 京公网安备11010802020210
+            </span>
+            <a class="footer-bottom-pic1" href="#"><img src="../image/footer-4.png"></a>
+            <a class="footer-bottom-pic2" href="#"><img src="../image/footer-3.png"></a>
+            <a class="footer-bottom-pic3" class="footer-5" href="#"><img src="../image/footer-5.png"></a>
+        </div>
+    </div>
+    <!-- 悬浮框设定 -->
+    <div class="fudong">
+        <div class="fudong1"></div>
+        <div class="fudong2"><i class="fudongerweima"></i></div>
+    </div>
+</body>
+<script type="text/javascript" src="../js/app.js"></script>
+
+</html>

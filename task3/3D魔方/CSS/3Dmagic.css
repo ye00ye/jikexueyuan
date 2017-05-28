@@ -1,0 +1,93 @@
+html,
+body {
+    height: 100%;
+    background: black;
+}
+
+/*舞台设置*/
+.container {
+    position: relative;
+    height: 100%;
+    perspective: 0;
+    transform-style: preserve-3d;
+    -webkit-animation: mydhua 5s ease infinite;
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+}
+
+
+/*每个面的设置*/
+.front {
+    transform: translateZ(150px);
+}
+
+.back {
+    transform: translateZ(-150px) rotateY(180deg);
+}
+
+.top {
+    transform: rotateX(-90deg) translateZ(150px);
+}
+
+.bottom {
+    transform: rotateX(90deg) translateZ(150px);
+}
+
+.left {
+    transform: rotateY(90deg) translateZ(150px);
+}
+
+.right {
+    transform: rotateY(-90deg) translateZ(150px);
+}
+
+.float {
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    box-shadow: 0px 0px 10px 10px rgba(75, 20, 70, .5);
+}
+
+.block {
+    text-align: center;
+}
+
+
+/*每个面中间的图片设置*/
+#image {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+/*动画样式*/
+@-webkit-keyframes mydhua {
+    0% {
+        -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(360deg);
+    }
+    100% {
+        -webkit-transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+}
+

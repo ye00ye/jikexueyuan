@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <title>新闻系统</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="iconfont/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/news.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/swiper-3.4.2.jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="cf">
+            <a href="#" class="logo"><span class="iconfont">&#xe7df;</span></a>
+            <a href="#" class="user"><span class="iconfont">&#xe637;</span></a>
+            <a href="#" class="add"><span class="iconfont">&#xe67e;</span></a>
+            <a href="#" class="search"><span class="iconfont">&#xe606;</span></a>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#" class="border">精选</a></li>
+                <li><a href="#">百家</a></li>
+                <li><a href="#">本地</a></li>
+                <li><a href="#">娱乐</a></li>
+                <li><a href="#">社会</a></li>
+                <li><a href="#">军事</a></li>
+                <li><a href="#">女人</a></li>
+                <li><a href="#">搞笑</a></li>
+                <li><a href="#">互联网</a></li>
+                <li><a href="#">科技</a></li>
+                <li><a href="#">生活</a></li>
+                <li><a href="#">删除及排序</a></li>
+            </ul>
+        </nav>
+        <!-- 新闻栏目 -->
+        <article class="news-main">
+            <!-- 轮播图 -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/laodong.jpg"></div>
+                    <div class="swiper-slide"><img src="img/tuofa.jpg"></div>
+                    <div class="swiper-slide"><img src="img/xijinping.jpg"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <div class="go-top-trigger"></div>
+            <!-- 回到顶部的滚动条设置 -->
+            <ul class="news-lists">
+                <!-- 自动添加新闻 -->
+            </ul>
+        </article>
+    </div>
+</body>
+<script type="text/javascript">
+$(document).ready(function() {
+    var deviceWidth = $("body").width();
+    $("nav li").each(function(index, item) {
+        if ($(this).find("a").html().split("").length > 3) {
+            $(this).width(deviceWidth)
+        } else if ($(this).find("a").html().split("").length > 2) {
+            $(this).width(deviceWidth / 3)
+        } else {
+            $(this).width(deviceWidth / 6);
+        }
+    })
+})
+</script>
+<script type="text/javascript" src="js/news.js"></script>
+
+</html>

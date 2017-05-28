@@ -1,0 +1,282 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>兼容性测试</title>
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon" />
+    <link type="text/css" rel="stylesheet" href="CSS/baidu.css">
+    <link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script type="text/javascript" src="bootstrap/js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <!-[if lt IE]>
+    <script src="mode/html5.js"></script>
+    <![endif]->
+<!-- 增加该语句，使得html5的新特性可以适用于IE上面 -->
+    <style type="text/css">
+        @media only screen and (min-width:520px){
+            #wrapper{
+                display:block;
+            }
+            #wrapper2{
+                display:none;
+            }           
+        }
+        @media only screen and (max-width:520px){
+            #wrapper{display:none;}
+            #wrapper2{display:block;}
+        }
+
+    #logoimg {
+        margin-top: 50px;
+        height: 57px;
+        margin-bottom: 27px;
+    }
+
+    #logoimg img {
+        height: 57px;
+    }
+
+    #index-form {
+        margin: 0 16px;
+        height: 45px;
+        background: #fff;
+        border: 1px solid #d2d2d2;
+        -webkit-box-shadow: 0 2px 0 0 rgba(0, 0, 0, .03);
+        box-shadow: 0 2px 0 0 rgba(0, 0, 0, .03);
+        -webkit-border-radius: 2px;
+        border-radius: 2px;
+    }
+
+    .se-input {
+        height: 100%;
+        width: 100%;
+        border: 0;
+    }
+
+    .inputs {
+        margin-right: 110px;
+        height: 100%;
+    }
+
+    .right {
+        width: 110px;
+        height: 100%;
+        float: right;
+        position: relative;
+    }
+
+    .button {
+        width: 77px;
+        height: 100%;
+        background: #38f;
+        position: absolute;
+        border: none;
+        right: 0px;
+    }
+
+    .app {
+        width: 20px;
+        height: 43px;
+        position: absolute;
+        right: 80px;
+        overflow: hidden;
+        z-index: 10;
+    }
+
+    .app img {
+        height: 30px;
+        position: relative;
+        top: 5px;
+    }
+
+    .line {
+        margin: 30px 16px;
+        justify-content: space-between;
+        display: flex;
+        padding: 0 18px;
+    }
+
+    .tu1 {
+        width: 32px;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .tu2 {
+        width: 32px;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .ns-focus {
+        width: 22px;
+        height: 22px;
+        margin-top: 5px;
+        margin-left: 5px;
+        background-image: url("img/tupian.png");
+        background-size: 22px auto;
+    }
+
+    .pic1 {
+        background-position: 0px -286px;
+    }
+
+    .pic2 {
+        background-position: 0px -308px;
+    }
+
+    .pic3 {
+        background-position: 0px -330px;
+    }
+
+    .pic4 {
+        background-position: 0px -352px;
+    }
+
+    .pic5 {
+        background-position: 0px -374px;
+    }
+
+    .pic6 {
+        background-position: 0px -396px;
+    }
+
+    .tu1 span {
+        display: block;
+        height: 13px;
+        text-align: center;
+        padding-top: 8px;
+        font-size: 13px;
+        line-height: 1;
+        color: #999;
+    }
+
+    .neirong {
+        margin: 20px 10px;
+    }
+
+    .neirong span {
+        color: #000;
+    }
+
+    .neirong img {
+        display: inline-block;
+        width: 32%;
+    }
+
+    .neirongimg {
+        text-align: center;
+    }
+
+        </style> 
+
+</head>
+
+<body>
+    <div id="wrapper">
+         <header>
+            <nav>
+                <a href="https://www.nuomi.com/?cid=002540" class="mnav">糯米</a>
+                <a href="http://news.baidu.com/" class="mnav">新闻</a>
+                <a href="https://www.hao123.com/" class="mnav">hao123</a>
+                <a href="http://map.baidu.com/" class="mnav">地图</a>
+                <a href="http://v.baidu.com/" class="mnav">视频</a>
+                <a href="https://tieba.baidu.com/index.html" class="mnav">贴吧</a>
+                <a href="https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F" class="mnav">登录</a>
+                <a href="javascript:;" class="mnav">设置</a>
+                  <span class="navigator">
+                      <a href="#"><span>更多产品</span></a>
+                      <ul class="tanchucaidan">
+                            <li><a href="http://music.baidu.com">音乐</a></li>
+                            <li><a href="http://image.baidu.com">图片</a></li>
+                            <li><a href="http://zhidao.baidu.com">知道</a></li>
+                            <li><a href="http://wenku.baidu.com">文库</a></li>
+                            <li><a href="http://top.baidu.com">风云榜</a></li>
+                            <li><a href="http://www.baidu.com/more/">全部产品>></a></li>
+                        </ul>
+                  </span>  
+            </nav>
+        </header>
+        <div class="content">
+            <img src="img/logo.png" alt="百度一下">
+            <form action="https://www.baidu.com/s" method="get" target="_blank">
+                <div class="wrap">
+                <input type="text" name="wd" id="kw" value  autocomplete="off">
+                <input type="submit" name="tijiao" value="百度一下" class="tijiao">
+                </div>
+            </form>
+        </div> 
+        <footer>
+            <p>
+                <a href="https://www.baidu.com/cache/sethelp/help.html">把百度设为首页</a>
+                <a href="http://home.baidu.com/">关于百度</a>
+                <a href="http://ir.baidu.com/">About Baidu</a>
+                <a href="http://e.baidu.com/?refer=888">百度推广</a>
+            </p>
+            <p>©2017 Baidu
+                <a href="http://www.baidu.com/duty/">使用百度前必读</a>
+                <a href="http://jianyi.baidu.com/">意见反馈</a>
+                <span>京ICP证030173号</span>
+                <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000001">京公网安备11000002000001号</a>
+            </p>
+        </footer>
+    </div> 
+
+    <div id="wrapper2">
+        <header class="text-center">
+            <div id="logoimg">
+                <img src="img/logo2.png" alt="百度一下">
+            </div>
+            <form data-formposition="i" id="index-form" action="/ssid=09c679655f305f7965ad5c/from=844b/s" method="get" autocomplete="off">
+                <div class="right">
+                    <button class="button" type="submit">百度一下</button>
+                    <div class="app">
+                        <img src="img/app.png" alt="app"/>
+                    </div>
+                </div>
+                <div class="inputs">
+                <input type="text" autocomplete="off" autocorrect="off" maxlength="64" name="word" class="se-input"> 
+                </div>
+            </form>
+        </header>
+        <div class="line">
+            <a class="tu1" href="#">
+                <div class="ns-focus pic1"></div>
+                <span class="span">关注</span>
+            </a>
+            <a class="tu1" href="#">
+                <div class="ns-focus pic2"></div>
+                <span class="span">新闻</span>
+            </a>
+            <a class="tu1" href="#">
+                <div class="ns-focus pic3"></div>
+                <span class="span">小说</span>
+            </a>
+            <a class="tu1" href="#">
+                <div class="ns-focus pic4"></div>
+                <span class="span">视频</span>
+            </a>
+            <a class="tu1" href="#">
+                <div class="ns-focus pic5"></div>
+                <span class="span">糯米</span>
+            </a>
+            <a class="tu1 tu2" href="#">
+                <div class="ns-focus pic6"></div>
+                <span class="span">地图</span>
+            </a>
+        </div>   
+        <div class="neirong">
+            <a href="#">
+                <span>美国动朝鲜的一个底线，就是不能波及中俄，那美国又有哪些现实利益</span>
+                <div class="neirongimg">
+                    <img src="img/pian1.png">
+                    <img src="img/pian2.png">
+                    <img src="img/pian3.png">
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

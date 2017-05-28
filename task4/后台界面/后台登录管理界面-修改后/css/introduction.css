@@ -1,0 +1,54 @@
+    .page-header {
+        background: orange;
+        padding-top: 5px;
+    }
+    
+    img {
+        position: relative;
+        bottom: 13px;
+    }
+    
+    #web17173 {
+        color: orange;
+        font-size: 20px;
+    }
+    
+    .navbar-right {
+        padding-right: 30px;
+    }
+    
+    .left {
+        background: grey;
+    }
+    
+    li a {
+        color: black;
+    }
+    
+    .main {
+        background: grey;
+    }
+    
+    .jumbtron img {
+        width: 500px;
+        display: block;
+        margin-top: 36px;
+    }
+    
+    .col-sm-9 {
+        width: 74%;
+		margin-top:15px;
+		margin-left:15px;
+	}
+    .col-sm-9 .row{
+		padding-top:20px;
+	}
+	
+    .thumbnail img {
+        bottom: 0px;
+        float: left;
+    }
+    
+    .text-left {
+        text-indent: 2em;
+    }

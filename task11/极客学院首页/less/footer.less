@@ -1,0 +1,134 @@
+//尾部区域
+.footer {
+    width: 1000px;
+    height: 300px;
+    margin: 0 auto;
+    color: #808080;
+    position: relative;
+}
+
+.footer__left {
+    margin-top: 25px;
+    float: left;
+}
+
+.footer__middle {
+    float: left;
+    margin-top: 35px;
+    margin-left: 70px;
+    dl {
+        display: block;
+        width: 135px;
+        float: left;
+        dd {
+            font-size: 12px;
+            line-height: 30px;
+            a {
+                text-decoration: none;
+                color: #999;
+            }
+        }
+    }
+}
+
+.footer__right {
+    margin-top: 28px;
+    float: left;
+    p {
+        margin-bottom: 20px;
+    }
+    .footer-common {
+        width: 138px;
+        height: 28px;
+        border: 1px solid #999;
+        background: #808080;
+        margin-bottom: 10px;
+        position: relative;
+        cursor: pointer;
+        &:hover {
+            .footer-pic {
+                display: block;
+            }
+        }
+    }
+    .left-common {
+        width: 28px;
+        height: 28px;
+        margin-right: 2px;
+        float: left;
+        background-size: 28px 28px;
+        background-repeat: no-repeat;
+    }
+    .left-1 {
+        background-image: url(../img/footer-1.png?__sprite);
+    }
+    .left-2 {
+        background-image: url(../img/footer-2.png?__sprite);
+    }
+    .right-common {
+        width: 108px;
+        height: 28px;
+        background: #fff;
+        float: left;
+        text-align: center;
+        line-height: 28px;
+        color: #808080;
+    }
+    img {
+        width: 113px;
+        height: 144px;
+    }
+    .footer-pic {
+        display: none;
+        position: absolute;
+        top: -147px;
+        left: 10px;
+    }
+}
+
+.footer__bottom {
+    width: 1000px;
+    height: 70px;
+    margin-top: 15px;
+    clear: both;
+    font-size: 12px;
+    text-align: center;
+    position: absolute;
+    top: 223px;
+    span {
+        a {
+            text-decoration: none;
+            color: #999;
+        }
+    }
+    .footer-bottom-pic1 {
+        float: right;
+        img {
+            display: block;
+            width: 20px;
+            height: 15px;
+        }
+    }
+    .footer-bottom-pic2 {
+        float: right;
+        margin-right: 20px;
+        img {
+            display: block;
+            width: 20px;
+            height: 15px;
+        }
+    }
+    .footer-bottom-pic3 {
+        clear: both;
+        display: block;
+        margin-left: 50%;
+        position: absolute;
+        left: -30px;
+        margin-top: 10px;
+        img {
+            display: block;
+            width: 60px;
+            height: 22px;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>计算器</title>
+    <script src="calc.js"></script>
+    <style type="text/css">
+    input {
+        text-align: center;
+        display: inline-block;
+        width: 60px;
+        height: 20px;
+    }
+    </style>
+</head>
+
+<body>
+    请输入第一个数：
+    <input type="text" id="num1">
+    <br/> 请输入运算符：
+    <select id="operate">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <br/> 请输入第二个数：
+    <input type="text" id="num2">
+    <br/>
+    <button onclick="resultss()">计算</button>
+    <input type="text" id="result">
+</body>
+
+</html>

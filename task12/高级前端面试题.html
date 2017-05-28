@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>前端工程师面试题</title>
+    <style>
+        h1 {
+            background: aqua;
+        }
+        
+        h3 {
+            background: olive;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>HTML+CSS</h1>
+    <h3>1.HTML5 为什么只需要写 (!DOCTYPE HTML)？</h3>
+    <span>
+        HTML5不基于SGML，因此不需要对DTD进行引用，但是需要DOCTYPE来规范浏览器的行为（让浏览器按照他们应该的方式来运行）而HTML4.01基于SGML，所以需要对DTD进行引用，才能告知浏览器文档所使用的文档类型。
+    </span>
+    <h3>2、行内元素有哪些？块级元素有哪些？ 空(void)元素有那些？</h3>
+    <span>行内元素：a  b  span  img  input  select  strong</span>
+    <br/>
+    <span>块级元素：div  ul  ol  li  dl  dt  dd  h1  h2  h3  h4  p  等</span>
+    <br/>
+    <span>空元素：br hr img link meta</span>
+    <h3>3、页面导入样式时，使用link和@import有什么区别？</h3>
+    <ol>
+        <li>link属于XHTML标签，而@import是css提供的</li>
+        <li>页面被加载时，link会同时被加载，而@import引用的css会等到页面被加载完再加载</li>
+        <li>@import只在IE5以上才能识别，而link是XHTML标签，无兼容问题</li>
+        <li>link方式的样式的权重高于@import的权重</li>
+    </ol>
+    <h3>4、html5有哪些新特性、移除了那些元素？如何处理HTML5新标签的浏览器兼容问题？</h3>
+    <ol>
+        <li>内容元素：article、footer、header、nav、section</li>
+        <li>表单控件：calendar、date、time、email、url、search</li>
+        <li>控件元素：webworker，websockt，Geolocation</li>
+    </ol>
+    <ul>
+        <li>处理兼容问题的两种方式</li>
+        <ol>
+            <li>IE6/IE7/IE8支持通过document方法产生的标签，利用这一特性让这些浏览器支持HTML5新标签。</li>
+            <li>使用是html5shim框架</li>
+        </ol>
+    </ul>
+    <h3>5、如何区分 HTML 和 HTML5？</h3>
+    <span>在文档类型声明上不同：HTML是很长的一段代码，很难记住，而HTML5却只有简简单单的声明，方便记忆。</span>
+    <h3>6、简述一下你对HTML语义化的理解？</h3>
+    <ol>
+        <li>用正确的标签做正确的事情</li>
+        <li>html语义化让页面的内容结构化，结构更清晰，便于对浏览器、搜索引擎解析</li>
+        <li>即使在没有样式css情况下也以一种文档格式显示，并且是容易阅读的</li>
+        <li>搜索引擎的爬虫也依赖于HTML标记来确定上下文和各个关键字的权重，利于SEO</li>
+    </ol>
+    <h3>7、HTML5的离线储存怎么使用，工作原理能不能解释一下？</h3>
+    <ol>
+        <li>localStorage 长期存储数据，浏览器关闭后数据不丢失</li>
+        <li>sessionStorage 数据在浏览器关闭后自动删除</li>
+    </ol>
+    <h3>8、iframe有那些缺点？</h3>
+    <ol>
+        <li>在网页中使用框架结构最大的弊病是搜索引擎的“蜘蛛”程序无法解读这种页面</li>
+        <li>框架结构有时会让人感到迷惑，页面很混乱</li>
+    </ol>
+    <h3>9、Doctype作用? 严格模式与混杂模式如何区分？它们有何意义?</h3>
+    <ol>
+        <li>(!Doctype)声明位于文档中的最前面，处于(html)标签之前。告知浏览器的解析器，用什么文档类型规范来解析这个文档</li>
+        <li>严格模式的排版和JS运作模式是以该浏览器支持的最高标准运行</li>
+        <li>在混杂模式中，页面以宽松的向后兼容的方式显示。模拟老式浏览器的行为以防止站点无法工作</li>
+        <li>DOCTYPE不存在或格式不正确会导致文档以混杂模式呈现</li>
+    </ol>
+    <h3>10、常见兼容性问题？</h3>
+    <ol>
+        <li>png24位的图片在IE6浏览器上出现背景 解决方案是：做成PNG8</li>
+        <li>浏览器默认的 margin 和 padding 不同 解决方案是：加一个全局的*{margin:0;padding:0;}来统一</li>
+        <li>IE6双边距bug：块属性标签float后，又有横行的 margin 情况下，在 IE6 显示 margin 比设置的大。浮动IE产生的双倍距离 #box{float:left;width:10px;margin:0 0 0 100px;} 这种情况下IE6会产生200px的距离 解决方法：加上_display：inline，使浮动忽略</li>
+        <li>IE下，可以使用获取常规属性的方法来获取自定义属性，也可以使用getAttribute()获取自定义属性； Firefox下，只能使用getAttribute()获取自定义属性 解决方法：统一通过getAttribute()获取自定义属性</li>
+        <li>IE下，even对象有x，y属性，但是没有pageX，pageY属性，但是没有x，y属性 解决方法：（条件注释）缺点是在IE浏览器下可能会增加额外的HTTP请求数</li>
+        <li>Chrome中文界面下默认会将小于 12px 的文本强制按照 12px 显示 解决方法：可通过加入 CSS 属性 -webkt-text-size-adjust:none;解决</li>
+        <li>超链接访问过后 hover 样式就不出现了，被点击访问过的超链接样式不在具有 hover 和 active 解决方法：改变CSS属性的排列顺序：L-V-H-A: a:link{ } a:visited{ } a:hover{ } a:active{ }</li>
+    </ol>
+    <h3>11、如何实现浏览器内多个标签页之间的通信</h3>
+    <span>调用localstorge、cookies等本地存储方式</span>
+    <h3>12、webSocket如何兼容低浏览器？</h3>
+    <span>Adobe Flash Socket 、 ActiveX HTMLFile (IE) 、 基于 multipart 编码发送 XHR 、 基于长轮询的 XHR</span>
+    <h3>13、支持HTML5新标签</h3>
+    <ol>
+        <li>IE8/IE7/IE6支持通过 document.createElement 方法产生的标签，可以利用这一特性让这些浏览器支持 HTML5 新标签，浏览器支持新标签后，还需要添加标签默认的样式</li>
+        <li>最好的方式是直接使用成熟的框架、使用最多的是 html5shim 框架</li>
+    </ol>
+    <h3>14、如何区分：DOCTYPE 声明\新增的结构元素\功能元素，语义化的理解？</h3>
+    <ol>
+        <li>用正确的标签做正确的事情</li>
+        <li>html语义化就是让页面的内容结构化，便于对浏览器、搜索引擎解析</li>
+        <li>在没有样式 CSS 情况下也以一种文档格式显示，并且是容易阅读的</li>
+        <li>搜索引擎的爬虫依赖于标记来确定上下文和各个关键字的权重，利用 SEO</li>
+        <li>使阅读源代码的人对网站更容易将网站分块，便于阅读维护理解</li>
+    </ol>
+    <h3>15、介绍一下 CSS 的盒子模型？</h3>
+    <ol>
+        <li>有两种，IE 盒子模型、标准 W3C 盒子模型； IE 的 content 部分包含了 border 和 padding</li>
+        <li>盒模型：内容（content）、填充（padding）、边界（margin）、边框（border）</li>
+    </ol>
+    <h3>16、CSS 选择符有哪些？哪些属性可以继承？优先级算法如何计算？ CSS3 新增伪类有哪些</h3>
+    <ol>
+        <li>id 选择器（#myid）</li>
+        <li>类选择器（.myclassname）</li>
+        <li>标签选择器（div，h1，p）</li>
+        <li>相邻选择器（h1 + p）</li>
+        <li>子选择器（ul > li）</li>
+        <li>后代选择器（li a）</li>
+        <li>通配符选择器（* ）</li>
+        <li>属性选择器（ a[rel = "external"]）</li>
+        <li>伪类选择器（a: hover, li: nth - child）</li>
+    </ol>
+    <h3>17、可继承的样式</h3>
+    <span>font-size font-family color, UL LI DL DD DT</span>
+    <h3>18、不可继承的样式</h3>
+    <span>border padding margin width height</span>
+    <h3>19、优先级就近原则</h3>
+    <span>同权重情况下样式定义最近者为准</span>
+    <h3>20、载入样式以最后载入的定位为准;</h3>
+    <span>解析答案：优先级为: !important >  id > class > tag  ；   important 比 内联优先级高 </span>
+    <h3>21、CSS3新增伪类举例</h3>
+    <ol>
+        <li>p:first-of-type 选择属于其父元素的首个(p)元素的每个(p)元素</li>
+        <li>p:last-of-type 选择属于其父元素的最后(p)元素的每个(p)元素</li>
+        <li>p:only-of-type 选择属于其父元素唯一的(p)元素的每个(p)元素</li>
+        <li>p:only-child 选择属于其父元素的唯一子元素的每个(p)元素</li>
+        <li>p:nth-child(2) 选择属于其父元素的第二个子元素的每个(p)元素</li>
+        <li>:enabled :disabled 控制表单控件的禁用状态</li>
+        <li>:checked 单选框或复选框被选中</li>
+    </ol>
+    <h3>22、如何居中div？ 如何居中一个浮动元素？</h3>
+    <span>给div 设置一个宽度，然后添加 margin:0 auto 属性；div{width:200px; margin:0 auto; }</span>
+    <h3>23、css3有哪些新特性？</h3>
+    <ol>
+        <li>实现圆角（border-radius:8px;）</li>
+        <li>阴影（box-shadow:10px）</li>
+        <li>对文字加特效（text-shadow）</li>
+        <li>线性渐变（gradient）</li>
+        <li>旋转（transform）</li>
+        <li>transform:rotate(9deg) scale(0.85,0.90) translate(0px,-30px) skew(-9deg,0deg);//旋转，缩放，定位，倾斜</li>
+        <li>增加了更多的 css 选择器</li>
+        <li>多背景</li>
+        <li>rgba</li>
+    </ol>
+    <h3>24、为什么要初始化 CSS 样式?</h3>
+    <span>因为浏览器的兼容问题，不同浏览器对有些标签的默认值是不同的，如果没对 CSS 初始化往往会出现浏览器之间的页面显示差异。
+当然，初始化样式会对 SEO 有一定的影响，但鱼和熊掌不可兼得，但力求影响最小的情况下初始化。</span>
+    <br/>
+    <span>最简单的初始化方法是：*{padding:0;margin:0} (不建议)</span>
+    <br/>
+    <span>淘宝的样式初始化：
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, 
+        textarea, th, td { margin:0; padding:0; } 
+        body, button, input, select, textarea { font:12px/1.5tahoma, arial, \5b8b\4f53; } 
+        h1, h2, h3, h4, h5, h6{ font-size:100%; } 
+        address, cite, dfn, em, var { font-style:normal; } 
+        code, kbd, pre, samp { font-family:couriernew, courier, monospace; } 
+        small{ font-size:12px; } 
+        ul, ol { list-style:none; } 
+        a { text-decoration:none; } 
+        a:hover { text-decoration:underline; } 
+        sup { vertical-align:text-top; } 
+        sub{ vertical-align:text-bottom; } 
+        legend { color:#000; } 
+        fieldset, img { border:0; } 
+        button, input, select, textarea { font-size:100%; } table { border-collapse:collapse; border-spacing:0; } </span>
+    <h3>25、display:inline-block什么时候会显示间隙？</h3>
+    <span>移除空格，使用margin 负值、使用 font-size:0、letter-spacing 、word-spacing</span>
+    <h3>使用 CSS 预处理器吗？喜欢哪个？</h3>
+    <span>sass less</span>
+    <h1>JS</h1>
+    <h3>1.javascript的typeof返回哪些数据类型</h3>
+    <span>Object number function boolean underfind</span>
+    <h3>2.例举3种强制类型转换和2种隐式类型转换?</h3>
+    <span>强制（parseInt,parseFloat,number）    隐式（== – ===）</span>
+    <h3>3.split() join() 的区别</h3>
+    <span>前者是切割成数组的形式，后者是将数组转换成字符串</span>
+    <h3>4.数组方法pop() push() unshift() shift()</h3>
+    <ol>
+        <li>Push()尾部添加 pop()尾部删除</li>
+        <li>Unshift()头部添加 shift()头部删除</li>
+    </ol>
+    <h3>6.IE和DOM事件流的区别</h3>
+    <ol>
+        <li>执行顺序不一样</li>
+        <li>参数不一样</li>
+        <li>事件加不加on</li>
+        <li>this指向问题</li>
+    </ol>
+    <h3>7.IE和标准下有哪些兼容性的写法</h3>
+    <ol>
+        <li>Var ev = ev || window.event</li>
+        <li>document.documentElement.clientWidth || document.body.clientWidth</li>
+        <li>Var target = ev.srcElement||ev.target</li>
+    </ol>
+    <h3>8.ajax请求的时候get 和post方式的区别</h3>
+    <ol>
+        <li>一个在url后面 一个放在虚拟载体里面</li>
+        <li>有大小限制</li>
+        <li>安全问题</li>
+        <li>应用不同 一个是论坛等只需要请求的，一个是类似修改密码的</li>
+    </ol>
+    <h3>9.call和apply的区别</h3>
+    <ol>
+        <li>Object.call(this,obj1,obj2,obj3)</li>
+        <li>Object.apply(this,arguments)</li>
+    </ol>
+    <h3>10.ajax请求时，如何解释json数据</h3>
+    <span>使用eval parse;鉴于安全性考虑,使用parse更靠谱</span>
+    <h3>11.添加 删除 替换 插入到某个接点的方法</h3>
+    <ol>
+        <li>obj.appendChidl</li>
+        <li>obj.innersetBefore</li>
+        <li>obj.replaceChild</li>
+        <li>obj.removeChild</li>
+    </ol>
+    <h3>12.document load 和document ready的区别</h3>
+    <ol>
+        <li>Document.onload 是在结构和样式加载完才执行js</li>
+        <li>Document.ready原生种没有这个方法，jquery中有 $().ready(function)</li>
+    </ol>
+    <h3>13.”==”和“===”的不同</h3>
+    <ol>
+        <li>前者会自动转换类型</li>
+        <li>后者不会</li>
+    </ol>
+    <h3></h3>
+    <h1>工业化</h1>
+    <h3>1.常见设计模式</h3>
+    <ol>
+        <li>单例模式</li>
+        <li>装饰者模式</li>
+        <li>适配器模式</li>
+        <li>代理模式</li>
+        <li>观察者模式</li>
+        <li>工厂模式</li>
+    </ol>
+    <h3>2.前端工业化框架</h3>
+    <ol>
+        <li>grunt</li>
+        <li>gulp</li>
+        <li>bower</li>
+        <li>yeoman</li>
+        <li>fis</li>
+    </ol>
+    <h3>3.前处理器</h3>
+    <ol>
+        <li>less</li>
+        <li>sass</li>
+    </ol>
+</body>
+
+</html>

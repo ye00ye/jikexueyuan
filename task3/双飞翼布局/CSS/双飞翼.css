@@ -1,0 +1,70 @@
+/*全局属性*/
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    /*居中对齐，两侧随屏幕的缩放而缩放，设置中间width,使得中间内容不随屏幕变化而变化*/
+    body {
+        margin: 0 auto;
+        min-width: 1000px;
+        text-indent: 2em;
+    }
+    /*利用line-height使得文字垂直距离上居中*/
+    header {
+        text-align: center;
+        line-height: 50px;
+        background-color: grey;
+        margin: 10px 0;
+    }
+    
+    .main{
+        overflow:hidden;
+    }
+
+    .column {
+        float: left;
+    }
+
+    
+    #center {
+        width: 100%;
+        padding-bottom:9999px;
+        margin-bottom:-9999px;
+    }
+
+    /*左右栏固定，中间width=bodywidth(1000px)-左边width-右边width，因此无需设置width*/
+    #center-body {
+        margin-left: 200px;
+        margin-right: 200px;
+        background-color: grey;
+        text-align:center;
+    }
+
+    #center-body p{
+        text-align:left;
+    }
+    /*width为190px,而margin为200px，产生一个10px的间距*/
+    #left {
+        width: 190px;
+        background-color: grey;
+        margin-left: -100%;
+        padding-bottom:9999px;
+        margin-bottom:-9999px;
+    }
+    
+    #right {
+        width: 190px;
+        background-color: grey;
+        margin-left: -190px;
+        padding-bottom:9999px;
+        margin-bottom:-9999px;
+    }
+    /*页脚去除左浮动*/
+    /*为页脚和主体部分设置margin,没有用，不知为何？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？？*/
+    /*设置相对浮动留出空白*/
+    footer {
+     /* margin-top: 100px;   此处设置无效，不知是不是受到clear的影响*/
+        clear: both;
+        background-color: grey;
+        position:relative;
+        top:20px;

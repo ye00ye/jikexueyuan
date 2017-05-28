@@ -1,0 +1,491 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%
+}
+
+
+/*顶部设置一条阴影*/
+
+.yinying {
+    height: 35px;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    opacity: 0.3
+}
+
+
+/*背景图片设置*/
+
+.background_img {
+    position: fixed;
+    top: 0;
+    z-index: -10;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.background_1 {
+    background-image: url("../img/back3.jpg")
+}
+
+.background_2 {
+    background-image: url("../img/back2.jpeg")
+}
+
+.background_3 {
+    background-image: url("../img/back1.jpg")
+}
+
+.container {
+    min-width: 1000px;
+    position: relative;
+    background-color: #fff;
+}
+
+
+/*右侧导航条设置*/
+
+.right-nav {
+    float: right;
+    position: relative;
+    right: 100px
+}
+
+.right {
+    display: inline-block;
+    margin-right: 10px;
+    height: 32px;
+    line-height: 32px;
+}
+
+.right a {
+    color: #555;
+}
+
+aside {
+    box-sizing: border-box;
+    float: right;
+    position: absolute;
+    width: 90px;
+    right: 0px;
+    z-index: 100;
+}
+
+aside:hover {
+    height: 100%;
+    background: #fff !important;
+    color: #555
+}
+
+aside:hover .morelink {
+    background: #fff !important;
+    color: #000 !important;
+}
+
+aside ul {
+    display: none;
+    box-sizing: border-box;
+    z-index: 100;
+    height: 100%;
+    overflow: auto
+}
+
+aside:hover ul {
+    display: block
+}
+
+.morepro {
+    width: 90px;
+    text-align: center;
+    margin-right: 0
+}
+
+.morelink {
+    text-decoration: none;
+    color: #fff !important;
+    display: block;
+    width: 100%;
+    background-color: #398bfb;
+}
+
+.xiala {
+    list-style: none;
+    background-color: #fff;
+    width: 90px;
+    height: 66px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.icon {
+    display: block;
+    width: 36px;
+    height: 36px;
+    margin: auto;
+    position: relative;
+    top: 8px;
+}
+
+.pic1 {
+    background-image: url('../img/pic1.png?__sprite');
+}
+
+.pic2 {
+    background-image: url('../img/pic2.png?__sprite');
+}
+
+.pic3 {
+    background-image: url('../img/pic3.png?__sprite');
+}
+
+.pic4 {
+    background-image: url('../img/pic4.png?__sprite');
+}
+
+.pic5 {
+    background-image: url('../img/pic5.png?__sprite');
+}
+
+.pic6 {
+    background-image: url('../img/pic6.png?__sprite');
+}
+
+.pic7 {
+    background-image: url('../img/pic7.png?__sprite');
+}
+
+
+/*logo设置*/
+
+#baidulogo {
+    width: 270px;
+    height: 129px;
+    margin-left: 50%;
+    position: absolute;
+    left: -135px;
+    top: 50px;
+}
+
+#baidulogo img {
+    width: 100%;
+    height: 100%;
+}
+
+.form2 {
+    display: block;
+    width: 638px;
+    height: 40px;
+    position: absolute;
+    margin-left: 50%;
+    left: -319px;
+    top: 200px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+
+#inputs {
+    width: 540px;
+    height: 40px;
+    display: inline-block;
+    float: left;
+    border: none;
+    box-sizing: border-box;
+    padding: 1px 10px;
+    outline: none;
+}
+
+#btn {
+    width: 98px;
+    height: 40px;
+    display: inline-block;
+    float: left;
+    background: #38f;
+    border: none;
+    color: #fff;
+}
+
+#camera {
+    position: absolute;
+    display: block;
+    top: 4px;
+    right: 104px;
+}
+
+
+/*下面的导航条*/
+
+.tuijiannav {
+    position: absolute;
+    border: 1px solid #ccc;
+    top: 320px;
+    width: 1000px;
+    left: 50%;
+    margin-left: -500px;
+    background-color: #fff;
+    border-bottom: 100px
+}
+
+#tuijian li,
+.xiaokuai i,
+.xiaokuai span {
+    cursor: pointer
+}
+
+
+/*导航条水平设置*/
+
+#tuijian li {
+    float: left;
+    list-style: none;
+    display: block;
+    width: 80px;
+    height: 41px;
+    line-height: 41px;
+    text-align: center;
+}
+
+.lishow {
+    background: #9a9da2;
+}
+
+.content {
+    clear: left;
+}
+
+.content1 {
+    display: none;
+}
+
+.show {
+    display: block !important;
+}
+
+.contents {
+    margin: 10px 5px;
+    position: relative
+}
+
+.content a {
+    text-decoration: none;
+    color: #000;
+}
+
+#title1 a {
+    font-size: 20px;
+    font-style: bold;
+    font-family: arial, 'Microsoft Yahei', '微软雅黑';
+}
+
+.spec {
+    position: absolute;
+    left: 226px;
+    top: 30px;
+}
+
+.special {
+    position: absolute;
+    left: 226px;
+    top: 60px;
+}
+
+.redian {
+    border: 1px solid red;
+    border-radius: 2px;
+}
+
+.content2 {
+    display: none;
+}
+
+.daohang {
+    width: 1000px;
+}
+
+.xiaokuai {
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    float: left;
+    padding-left: 50px;
+    box-sizing: border-box;
+}
+
+i {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 3px;
+}
+
+.xiaokuai span {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+#nuomi {
+    background-image: url('../img/baidunuomi.png?__sprite');
+}
+
+#jingdong {
+    background-image: url('../img/jingdongshangcheng.png?__sprite');
+}
+
+#yihaodian {
+    background-image: url('../img/1号店.png?__sprite');
+}
+
+#suning {
+    background-image: url('../img/suningyigou.png?__sprite');
+}
+
+#weipin {
+    background-image: url('../img/weixin.png?__sprite');
+}
+
+#dangdang {
+    background-image: url('../img/dangdangwang.png?__sprite');
+}
+
+#douyu {
+    background-image: url('../img/douyu.png?__sprite');
+}
+
+#tengxun {
+    background-image: url('../img/tengxun.png?__sprite');
+}
+
+#aiqiyi {
+    background-image: url('../img/aiqiyi.png?__sprite');
+}
+
+#tielu {
+    background-image: url('../img/tielukehu.png?__sprite');
+}
+
+#youku {
+    background-image: url('../img/weipinhui.png?__sprite');
+}
+
+#weixin {
+    background-image: url('../img/weixin.png?__sprite');
+}
+
+#wangyi {
+    background-image: url('../img/wangyi.png?__sprite');
+}
+
+#taobao {
+    background-image: url('../img/taobaowang.png?__sprite');
+}
+
+#tongcheng {
+    background-image: url('../img/zhifubao.png?__sprite');
+}
+
+
+/*视频页面设置*/
+
+.content3 {
+    position: relative;
+    display: none;
+}
+
+.tv span {
+    display: block;
+    font-size: 12px;
+    text-align: left;
+}
+
+.tv {
+    float: left;
+    margin-right: 40px;
+    width: 195px;
+}
+
+.cp1 {
+    margin-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.cp2 {
+    padding-top: 10px;
+}
+
+.cp3 {
+    padding-top: 10px;
+    margin-bottom: 40px;
+}
+
+.cp4 {
+    padding-top: 10px;
+    margin-bottom: 40px;
+}
+
+.cp6 {
+    position: absolute;
+    top: 180px;
+    left: 519px;
+}
+
+.cp5 {
+    position: relative;
+    top: 8px;
+}
+
+.huanfu {
+    position: absolute;
+    left: 10px;
+    z-index: 600;
+    font-size: 25px;
+}
+
+.huanfu ul {
+    display: none;
+}
+
+.huanfu li {
+    cursor: pointer
+}
+
+.huanfu:hover ul {
+    display: block
+}
+
+
+/*返回顶部按钮设置*/
+
+#dingbu {
+    position: fixed;
+    display: none;
+    right: 100px;
+    bottom: 10px;
+}
+
+.search_float_wrap {
+    display: none;
+    position: fixed;
+    width: 100%;
+    background: #555;
+    z-index: 1000;
+    height: 150px;
+    text-align: center
+}
+
+.search_float_wrap #baidulogo {
+    top: -36px;
+}
+
+.search_float_wrap .form2 {
+    position: relative;
+    top: 80px
+}
